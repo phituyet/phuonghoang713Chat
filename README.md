@@ -1,12 +1,12 @@
 # Homework 2 - *Name of App*
 
-**Name of your app** is a Ruby on Rails blog application that allows users to send messages to each other that can only be read once.
+phuonghoang713chat is a Ruby on Rails blog application that allows users to send messages to each other that can only be read once.
 
-Submitted by: **Your Name Here**
+Submitted by: Hoang Nguyen
 
-Time spent: **X** hours
+Time spent: 24 hours
 
-URL: **Insert your Heroku URL here**
+URL: https://phuonghoang713chat.herokuapp.com/
 
 ## User Stories
 
