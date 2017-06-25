@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+users = User.all
+users.each do |user|
+  # next if user.image_url != nil
+  user.name = Faker::Name.name
+  user.image_url =  Faker::Avatar.image
+  puts "generate image [#{user.name}] #{user.image_url} "
+  user.save!
+end

@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
 
-
+  def index
+    @users = User.all.shuffle
+  end
+  
   def new
     @user = User.new(email: params[:email])
   end
