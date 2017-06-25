@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  def new
-  end
 
   def create
     if @user = User.find_by(email: params[:email])
@@ -21,6 +19,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_path, flash: {alert: "You Are Signed Out"}
+    redirect_to root_path, flash: {success: "You Are Signed Out"}
   end
 end
