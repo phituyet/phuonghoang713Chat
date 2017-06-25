@@ -14,7 +14,7 @@ class User < ApplicationRecord
   #   "#{name}:#{email}"
   # end
   #
-  # def unread_messages
-  #   received_messages.where(read_at: nil)
-  # end
+  def unread_messages
+    received_messages.where(is_read: false)
+  end
 end
