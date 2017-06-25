@@ -1,2 +1,8 @@
 <h1>Welcome minichat</h1>
-<%= link_to "Sign Up", new_user_path %>
+
+<% if current_user.present? %>
+  Welcome <%= current_user.name %>
+<% else %>
+  <%= link_to "Sign Up", new_user_path, class: 'btn btn-secondary' %>
+  <%= link_to "Sign In", new_session_path, class: 'btn btn-secondary' %>
+<% end %>
